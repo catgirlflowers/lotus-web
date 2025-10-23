@@ -173,6 +173,21 @@ a {
     margin-right: 8px;
 }
 
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.fadeOut {
+    animation: fadeOut 3s ease-in forwards;
+}
+
 #discorduser {
     color: rgb(211, 144, 231);
     position: relative;
@@ -181,26 +196,23 @@ a {
 }
 
 #tooltip {
-    opacity: 0;
+    display: none;
     position: absolute;
+    top: -175%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
     width: 220px;
     background-color: rgba(0, 0, 0, 0.603);
     border-radius: 6px;
-    left: 50%;
-    bottom: 100%;
-    margin-left: -110px;
     color: #b4d3ab;
     border: 2px solid #f782ab;
     padding: 2px;
+    pointer-events: none;
 }
 
-@keyframes fadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; }
-}
-
-.fadeOut {
-    animation: fadeOut 3s ease-in;
+#discorduser:hover #tooltip {
+    display: block;
 }
 
 p {
