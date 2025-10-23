@@ -31,16 +31,9 @@ catgirlflowers.addEventListener('click', async () => {
     tooltip.classList = 'fadeOut';
     setTimeout(() => {
         tooltip.textContent = 'click to copy >_<;;';
-        tooltip.classList = ''; //resets classList so we can fade out again >.<
-        tooltip.style.opacity = 0;
     }, 3000);
 });
 
-catgirlflowers.addEventListener('mouseover', () => {
-    tooltip.style.opacity = 1;
+catgirlflowers.addEventListener('mouseover', async () => {
+  tooltip.classList = '';
 });
-
-catgirlflowers.addEventListener('mouseleave', () => {
-    tooltip.style.opacity = 0;
-});
-
