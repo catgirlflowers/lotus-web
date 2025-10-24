@@ -1,4 +1,4 @@
-/* made by lilac / yuiyamu 
+/* lastfm functionality made by lilac / yuiyamu 
 * https://github.com/yuiyamu */
 /* <3 - anne  */
 
