@@ -42,6 +42,21 @@ main {
     margin-bottom: 45px;
 }
 
+#languages {
+    width: fit-content;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+#titlebarlang {
+    margin: 0%;
+}
+
+#langcontent {
+    padding: 10px;
+}
+
 #window0 {
     /* margin-top: 70px; */
     margin-left: 8%;
