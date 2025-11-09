@@ -35,5 +35,5 @@ catgirlflowers.addEventListener('click', async () => {
 });
 
 catgirlflowers.addEventListener('mouseover', async () => {
-  tooltip.classList = '';
+    tooltip.classList = '';
 });
